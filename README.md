@@ -1,4 +1,4 @@
-# e-project
+# ecommerce-react-app
 E-commerce Product Listing Page: 
  Technologies: React, JavaScript, HTML, CSS
 ●Developed a responsive product listing page with dynamic filtering and sorting options to improve product discoverability.
