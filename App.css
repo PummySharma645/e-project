@@ -1,0 +1,250 @@
+/* Navbar */
+.navbar {
+  background-color: #18bc9c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.search-input {
+  margin-left: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+.nav-right a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-right .signup {
+  border: 1px solid white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-right .signup:hover {
+  background-color: white;
+  color: #18bc9c;
+}
+
+/* App Container */
+.app-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.controls select {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+.product-card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #18bc9c;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #149b7a;
+}
+
+/* Cart */
+.cart {
+  margin-top: 40px;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cart h2 {
+  margin-bottom: 15px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item span {
+  flex: 1 1 auto;
+}
+
+.cart-item input {
+  width: 60px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.cart-item button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+}
+/* Footer styles */
+.footer {
+  background-color: #222;
+  color: #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #18bc9c;
+  padding-bottom: 8px;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-section a {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #18bc9c;
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+/* Social Icons */
+.footer-section.social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-section.social .social-icons a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #333;
+  border-radius: 50%;
+  color: #bbb;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-section.social .social-icons a:hover {
+  background-color: #18bc9c;
+  color: #fff;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
